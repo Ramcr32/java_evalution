@@ -8,4 +8,5 @@ public class Address {
 	public String toString() {
 		return "Address [city=" + city + ", state=" + state + ", pinCode=" + pinCode + "]";
 	}
+	
 }

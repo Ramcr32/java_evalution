@@ -13,15 +13,16 @@ public class Demo {
 		
 		for(int i=0; i<no; i++) {
 			System.out.println("student name:");
-			array[i].name= sc.next();
+			array[i] = new Student();
+			array[i].setName(sc.next());;
 			System.out.println("student roll:");
-			array[i].roll= sc.nextInt();
+			array[i].setRoll(sc.nextInt());;
 			System.out.println("student address:");
-			array[i].address= sc.next();
+			array[i].setAddress(sc.next());;
 			System.out.println("student marks:");
-			array[i].marks= sc.nextInt();
+			array[i].setMarks(sc.nextInt());;
 			System.out.println(array[i]);
-			sum+=array[i].marks;
+			sum+=array[i].getMarks();
 		}
 		System.out.println("average "+sum/no);
 		
